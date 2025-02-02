@@ -13,6 +13,5 @@ body {
   border-radius: 4px;
   font-weight: bold;
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  padding: 25px 15px;;
 }
