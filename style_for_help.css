@@ -2,11 +2,10 @@ div
   {
   width: 100px;
   height: 130px;
-  border: 1px solid Red;
   }
 img
   {
-  width: 100%;
-  height: 100%;
+  width: 500%;
+  height: 500%;
   object-fit: contain;
   }
