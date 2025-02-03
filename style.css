@@ -23,3 +23,7 @@ body {
   font-weight: bold;
   display: inline-block;
 }
+.header {
+    font-size:100px;
+    background: #403a3a;
+}
