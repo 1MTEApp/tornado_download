@@ -24,6 +24,8 @@ body {
   display: inline-block;
 }
 .header {
+    font-family: Arial, sans-serif;
     font-size:100px;
-    background: #403a3a;
+    background-color: #403a3a;
+    color: #333
 }
