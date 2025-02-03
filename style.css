@@ -26,6 +26,7 @@ body {
 .header {
     font-family: Arial, sans-serif;
     font-size:100px;
+    text-align: center;
     background-color: #3498db;
     color: #ffffff
 }
