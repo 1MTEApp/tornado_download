@@ -28,9 +28,10 @@ body {
     font-size:100px;
     text-align: center;
     background-color: #3498db;
-    color: #ffffff
+    color: #ffffff;
 }
 .code {
     background-color: #140f0b;
+    color: #ffffff;
 }
 
