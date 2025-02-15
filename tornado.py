@@ -11,7 +11,7 @@ def checking_for_updates():
         response = requests.get('https://1mteapp.github.io/tornado_download/version')
         soup = BeautifulSoup(response.text, "html.parser")
         check = soup.find('h1').get_text()
-        if check == '1.0':
+        if check == '1.1':
             print('У Вас установлена последняя версия!\n')
             time.sleep(2)
 
