@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.fire-container {
+    position: relative;
+    width: 100px;
+    height: 200px;
+}
+
+/* Стили для огня */
+.fire {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 100px;
+    background: linear-gradient(to top, #ff4500, #ff8c00, #ffd700);
+    border-radius: 50% 50% 0 0;
+    animation: flicker 1.5s infinite ease-in-out;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        transform: translateX(-50%) scaleY(1);
+    }
+    50% {
+        transform: translateX(-50%) scaleY(1.1);
+    }
+}
+
+/* Стили для частиц */
+.particle {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #ff8c00;
+    border-radius: 50%;
+    opacity: 0;
+    animation: rise 2s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        transform: translate(-50%, 0) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -200px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Разные задержки и скорости для частиц */
+.particle:nth-child(1) {
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+
+.particle:nth-child(2) {
+    animation-delay: 0.2s;
+    animation-duration: 2.5s;
+}
+
+.particle:nth-child(3) {
+    animation-delay: 0.4s;
+    animation-duration: 2.2s;
+}
+
+.particle:nth-child(4) {
+    animation-delay: 0.6s;
+    animation-duration: 2.3s;
+}
+
+.particle:nth-child(5) {
+    animation-delay: 0.8s;
+    animation-duration: 2.4s;
+}
+
+.particle:nth-child(6) {
+    animation-delay: 1s;
+    animation-duration: 2.1s;
+}
+
+.particle:nth-child(7) {
+    animation-delay: 1.2s;
+    animation-duration: 2.6s;
+}
+
+.particle:nth-child(8) {
+    animation-delay: 1.4s;
+    animation-duration: 2.3s;
+}
+
+.particle:nth-child(9) {
+    animation-delay: 1.6s;
+    animation-duration: 2.2s;
+}
+
+.particle:nth-child(10) {
+    animation-delay: 1.8s;
+    animation-duration: 2.5s;
+}
